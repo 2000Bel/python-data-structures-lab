@@ -10,8 +10,6 @@ def manage_students():
     last_student = students[-1]
     return first_student, last_student
 
-first_student, last_student = manage_students()
-
 print('Exercise 1:', manage_students())
 
 # Exercise 2: Loop and String Concatenation
