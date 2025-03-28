@@ -6,11 +6,14 @@
 
 def manage_students():
     students = ['Alice', 'Bob', 'Charlie']
-
     first_student = students[1]
     last_student = students[-1]
-    return
+    return first_student, last_student
 
+first_student, last_student = manage_students()
+
+print('Second student:', first_student)
+print('Last student:', last_student)
 print('Exercise 1:', manage_students())
 
 # Exercise 2: Loop and String Concatenation
@@ -22,9 +25,9 @@ print('Exercise 1:', manage_students())
 def combine_foods():
     foods = ('Taco', 'Burrito', 'Sandwich')
 
-    meal = ''
+    meal = ' '
     for food in foods:
-        meal.append(food)
+        meal += food + ' '
     return meal
 
 print('Exercise 2:', combine_foods())
@@ -84,7 +87,7 @@ def create_awesome_students():
     students = ['Alice', 'Bob', 'Charlie']
 
     for student in students:
-        awesome_students = f"{student} is awesome!"
+        awesome_students = [ student + ' is awesome!' for student in students]
     return awesome_students
 
 print('Exercise 6:', create_awesome_students())
