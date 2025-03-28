@@ -12,8 +12,6 @@ def manage_students():
 
 first_student, last_student = manage_students()
 
-print('Second student:', first_student)
-print('Last student:', last_student)
 print('Exercise 1:', manage_students())
 
 # Exercise 2: Loop and String Concatenation
